@@ -51,8 +51,7 @@ A key part of this task was to configure access permissions. Specifically, one o
 During the configuration, I encountered a "Public access prevention enforced" error at the bucket level. To proceed with making an individual object public (as required by the task), I temporarily disabled Public Access Prevention for the bucket. This allowed for fine-grained control over object-level access.
 
 **Screenshot 3: File Permissions (allUsers with Reader Role)**
-_Insert a screenshot here showing the "Edit access" dialog for your public file, clearly displaying the `allUsers` entry with "Public" entity type and "Reader" access. This is the crucial screenshot for permissions._
-
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%203.png?raw=true
 ---
 
 ### 5. Verifying Public Access
