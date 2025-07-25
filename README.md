@@ -37,8 +37,7 @@ https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Tas
 Several example files were uploaded to the newly created GCS bucket to demonstrate content storage.
 
 **Screenshot 2: Uploaded Files in Bucket**
-_This screenshot can be combined with Screenshot 1, or be a separate one if you prefer to show the files more clearly._
-
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%202.png?raw=true
 ---
 
 ### 4. Configuring Access Permissions
