@@ -30,7 +30,6 @@ A dedicated bucket was created in Google Cloud Storage to store the example file
 
 **Screenshot 1: Bucket Contents**
 https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%201.png?raw=true
----
 
 ### 3. Uploading Example Files
 
@@ -38,7 +37,7 @@ Several example files were uploaded to the newly created GCS bucket to demonstra
 
 **Screenshot 2: Uploaded Files in Bucket**
 https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%201%20(2).png?raw=true
----
+
 
 ### 4. Configuring Access Permissions
 
@@ -52,7 +51,7 @@ During the configuration, I encountered a "Public access prevention enforced" er
 
 **Screenshot 3: File Permissions (allUsers with Reader Role)**
 https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%201%20(3).png?raw=true
----
+
 
 ### 5. Verifying Public Access
 
@@ -96,7 +95,7 @@ A custom dashboard was created to visualize key metrics related to my cloud stor
 
 **Screenshot 6: Monitoring Dashboard Overview**
 https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%202%20(3).png?raw=true
----
+
 
 ## Conclusion for Task 2
 
