@@ -80,12 +80,10 @@ An alert policy was created to notify me of activity on my Google Cloud Storage 
 * **Policy Name:** `My Email Alerts`
 
 **Screenshot 4: Configured Alert Policy Overview**
-![Configured Alert Policy Overview](YOUR_LINK_TO_SCREENSHOT4_PNG_HERE)
-_(_**Note:** Use the screenshot from `image_0b24e8.png` as Screenshot 4. Upload it to GitHub and get its direct link._)_
+ https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%202.png?raw=true
 
-**Screenshot 5: Example Alert Notification (Optional but strong evidence)**
-![Example Alert Notification](YOUR_LINK_TO_SCREENSHOT5_PNG_HERE)
-_(_**Note:** This is the screenshot of the email you receive when the alert triggers. Upload it to GitHub and get its direct link. If you didn't get one, state that in the text and skip the image._)_
+**Screenshot 5:**
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%202%20(2).png?raw=true
 
 ### 2. Monitoring Dashboard Creation
 
@@ -97,9 +95,7 @@ A custom dashboard was created to visualize key metrics related to my cloud stor
     * Cloud Storage: Bytes sent (filtered by bucket name) - (If you couldn't find "Bytes sent", use another relevant GCS metric you found)
 
 **Screenshot 6: Monitoring Dashboard Overview**
-![Monitoring Dashboard Overview](YOUR_LINK_TO_SCREENSHOT6_PNG_HERE)
-_(_**Note:** This is the screenshot of your custom dashboard. Upload it to GitHub and get its direct link._)_
-
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%202%20(3).png?raw=true
 ---
 
 ## Conclusion for Task 2
