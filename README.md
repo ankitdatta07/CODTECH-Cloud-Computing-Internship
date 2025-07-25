@@ -63,3 +63,45 @@ The public accessibility of the configured file was verified by attempting to op
 ## Conclusion
 
 Task 1, "Cloud Storage Setup," has been successfully completed on Google Cloud Platform. I have demonstrated the creation of a storage bucket, the upload of example files, and the configuration of access permissions, including making a file publicly accessible. All work-related files and documentation are stored in this GitHub repository.# CODTECH-Cloud-Computing-Internship
+
+---
+
+## Task 2: Cloud Monitoring and Alerts
+
+This section details the setup of monitoring and alerting for a cloud-based service, fulfilling Task 2 of the internship. I used **Google Cloud Monitoring (Operations Suite)** to achieve this.
+
+### 1. Alert Policy Configuration
+
+An alert policy was created to notify me of activity on my Google Cloud Storage bucket, demonstrating the ability to set up automated alerts based on specific metrics.
+
+* **Monitored Metric:** Google Cloud Storage - Request count
+* **Threshold:** Triggered when "Request count" rate exceeds 2 per second within a 5-minute rolling window.
+* **Notification Channel:** Email (configured to send alerts to my specified email address).
+* **Policy Name:** `My Email Alerts`
+
+**Screenshot 4: Configured Alert Policy Overview**
+![Configured Alert Policy Overview](YOUR_LINK_TO_SCREENSHOT4_PNG_HERE)
+_(_**Note:** Use the screenshot from `image_0b24e8.png` as Screenshot 4. Upload it to GitHub and get its direct link._)_
+
+**Screenshot 5: Example Alert Notification (Optional but strong evidence)**
+![Example Alert Notification](YOUR_LINK_TO_SCREENSHOT5_PNG_HERE)
+_(_**Note:** This is the screenshot of the email you receive when the alert triggers. Upload it to GitHub and get its direct link. If you didn't get one, state that in the text and skip the image._)_
+
+### 2. Monitoring Dashboard Creation
+
+A custom dashboard was created to visualize key metrics related to my cloud storage, providing a comprehensive overview of its performance and usage.
+
+* **Dashboard Name:** `CODTECH Internship Cloud Storage Dashboard`
+* **Included Charts:**
+    * Cloud Storage: Request count (filtered by bucket name)
+    * Cloud Storage: Bytes sent (filtered by bucket name) - (If you couldn't find "Bytes sent", use another relevant GCS metric you found)
+
+**Screenshot 6: Monitoring Dashboard Overview**
+![Monitoring Dashboard Overview](YOUR_LINK_TO_SCREENSHOT6_PNG_HERE)
+_(_**Note:** This is the screenshot of your custom dashboard. Upload it to GitHub and get its direct link._)_
+
+---
+
+## Conclusion for Task 2
+
+Task 2, "Cloud Monitoring and Alerts," has been successfully completed using Google Cloud Monitoring. I have configured an alert policy for Cloud Storage request count and created a custom dashboard to visualize relevant metrics. This demonstrates proficiency in setting up proactive monitoring and insightful data visualization for cloud services. All work-related files and documentation for Task 2 are stored in this GitHub repository.
