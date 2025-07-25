@@ -29,8 +29,7 @@ A dedicated bucket was created in Google Cloud Storage to store the example file
 * **Access Control:** Fine-grained (to allow individual object permissions)
 
 **Screenshot 1: Bucket Contents**
-_Insert a screenshot here showing your bucket with the uploaded example files. You will upload this image to GitHub and link it here._
-
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%201.png?raw=true
 ---
 
 ### 3. Uploading Example Files
