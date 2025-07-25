@@ -60,11 +60,6 @@ The public accessibility of the configured file was verified by attempting to op
 
 * **Public URL of the Example File:** `https://storage.googleapis.com/codtech-internship-mybucket-2025/ilide.info-lux-algo-signals-amp-overlays-61-pr_4fd52ecacecd2db180613801d34f95c0.pdf'
 
-**Screenshot 4: Public File Opened in Browser (Optional but Recommended)**
-_Insert a screenshot here showing your public file successfully opened in a browser tab (ideally an incognito window) using its public URL. This visually confirms public access._
-
----
-
 ## Conclusion
 
 Task 1, "Cloud Storage Setup," has been successfully completed on Google Cloud Platform. I have demonstrated the creation of a storage bucket, the upload of example files, and the configuration of access permissions, including making a file publicly accessible. All work-related files and documentation are stored in this GitHub repository.# CODTECH-Cloud-Computing-Internship
