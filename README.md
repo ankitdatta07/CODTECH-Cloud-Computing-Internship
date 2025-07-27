@@ -1,4 +1,5 @@
-# CODTECH Cloud Computing Internship - Task 1: Cloud Storage Setup
+# CODTECH Cloud Computing Internship 
+Task 1: Cloud Storage Setup
 
 ## Overview
 
@@ -100,7 +101,7 @@ https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Tas
 ## Conclusion for Task 2
 
 Task 2, "Cloud Monitoring and Alerts," has been successfully completed using Google Cloud Monitoring. I have configured an alert policy for Cloud Storage request count and created a custom dashboard to visualize relevant metrics. This demonstrates proficiency in setting up proactive monitoring and insightful data visualization for cloud services. All work-related files and documentation for Task 2 are stored in this GitHub repository.
----
+
 
 ## Task 3: Multi-Cloud Architecture (AWS + GCP)
 
