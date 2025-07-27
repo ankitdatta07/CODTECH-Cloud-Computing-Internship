@@ -1,6 +1,6 @@
 # CODTECH Cloud Computing Internship 
 Task 1: Cloud Storage Setup
-
+---
 ## Overview
 
 This repository documents the completion of Task 1 for the CODTECH Cloud Computing Internship, focusing on setting up and configuring cloud storage.
@@ -199,9 +199,8 @@ The following steps were performed to set up the multi-cloud architecture:
 The following diagram visually represents the multi-cloud architecture implemented for this task, illustrating the event flow from AWS S3 to GCP Cloud Logging.
 
 **Screenshot 7: Multi-Cloud Architecture Diagram**
-![Multi-Cloud Architecture Diagram](YOUR_LINK_TO_ARCHITECTURE_DIAGRAM_PNG_HERE)
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%203.png?raw=true
 
----
 
 ## Conclusion for Task 3
 
