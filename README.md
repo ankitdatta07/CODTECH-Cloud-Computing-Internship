@@ -201,7 +201,7 @@ https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/S-7
 ## Conclusion for Task 3
 
 Task 3, "Multi-Cloud Architecture," has been successfully completed by designing and conceptually implementing a serverless pipeline between AWS and GCP. This setup demonstrates robust multi-cloud communication, where an event in AWS (file upload to S3) seamlessly triggers a service in GCP (Cloud Run), with the event details logged and verifiable in GCP Logs Explorer. This showcases practical interoperability and the power of leveraging services across different cloud providers.
----
+
 
 ## Task 4: Cloud Security Implementation
 
