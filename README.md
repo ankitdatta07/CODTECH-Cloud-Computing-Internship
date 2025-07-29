@@ -30,14 +30,13 @@ A dedicated bucket was created in Google Cloud Storage to store the example file
 * **Access Control:** Fine-grained (to allow individual object permissions)
 
 **Screenshot 1: Bucket Contents**
-https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%201.png?raw=true
-
+ https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/S-1.png?raw=true
 ### 3. Uploading Example Files
 
 Several example files were uploaded to the newly created GCS bucket to demonstrate content storage.
 
 **Screenshot 2: Uploaded Files in Bucket**
-https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%201%20(2).png?raw=true
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/S-2.png?raw=true
 
 
 ### 4. Configuring Access Permissions
@@ -51,7 +50,7 @@ A key part of this task was to configure access permissions. Specifically, one o
 During the configuration, I encountered a "Public access prevention enforced" error at the bucket level. To proceed with making an individual object public (as required by the task), I temporarily disabled Public Access Prevention for the bucket. This allowed for fine-grained control over object-level access.
 
 **Screenshot 3: File Permissions (allUsers with Reader Role)**
-https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%201%20(3).png?raw=true
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/S-3.png?raw=true
 
 
 ### 5. Verifying Public Access
@@ -80,10 +79,9 @@ An alert policy was created to notify me of activity on my Google Cloud Storage 
 * **Policy Name:** `My Email Alerts`
 
 **Screenshot 4: Configured Alert Policy Overview**
- https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%202.png?raw=true
-
+ https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/S-4.png?raw=true
 **Screenshot 5:**
-https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%202%20(2).png?raw=true
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/S-5.png?raw=true
 
 ### 2. Monitoring Dashboard Creation
 
@@ -95,8 +93,7 @@ A custom dashboard was created to visualize key metrics related to my cloud stor
     * Cloud Storage: Bytes sent (filtered by bucket name) - (If you couldn't find "Bytes sent", use another relevant GCS metric you found)
 
 **Screenshot 6: Monitoring Dashboard Overview**
-https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%202%20(3).png?raw=true
-
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/S-6.png?raw=true
 
 ## Conclusion for Task 2
 
@@ -199,8 +196,7 @@ The following steps were performed to set up the multi-cloud architecture:
 The following diagram visually represents the multi-cloud architecture implemented for this task, illustrating the event flow from AWS S3 to GCP Cloud Logging.
 
 **Screenshot 7: Multi-Cloud Architecture Diagram**
-https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Task%203.png?raw=true
-
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/S-7.png?raw=true
 
 ## Conclusion for Task 3
 
@@ -220,8 +216,9 @@ To demonstrate robust access control, a dedicated Service Account was created an
 * **Implemented Policy:** The `storage-uploader-sa` service account was granted the **`Storage Object Creator`** role *only* on the `codtech-internship-mybucket-2025` bucket. This was achieved by setting an IAM Condition at the project level, limiting the scope of this role to the specific bucket (`resource.name` starting with `projects/_/buckets/codtech-internship-mybucket-2025`). This exemplifies the principle of least privilege, ensuring the service account can upload new objects to this specific bucket but cannot read, delete, or modify existing objects, nor can it manage the bucket itself.
 
 **Screenshot 8: IAM Policy on Bucket (Service Account with Storage Object Creator Role via IAM Condition)**
-![IAM Policy on Bucket](YOUR_LINK_TO_SCREENSHOT8_PNG_HERE)
-_(_**Note:** Capture a screenshot of the IAM & Admin > IAM page showing your `storage-uploader-sa` principal and its "Storage Object Creator" role with the condition applied._)_
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/S-8.png?raw=true
+
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/S-9.png?raw=true
 
 ### 2. Secure Storage Configuration
 
@@ -235,8 +232,9 @@ Beyond IAM, the Cloud Storage bucket was configured with additional security set
     * **Location in GCP:** Found under the "Protection" section within the bucket details.
 
 **Screenshot 9: Secure Storage Configuration (Retention Policy)**
-![Secure Storage Configuration](YOUR_LINK_TO_SCREENSHOT9_PNG_HERE)
-_(_**Note:** Capture your bucket's "Configuration" tab (or "Protection" section) showing the enabled Retention Policy and its duration._)_
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/S-10.png?raw=true
+
+
 
 ### 3. Data Encryption Implementation
 
@@ -250,10 +248,9 @@ GCP provides strong encryption capabilities for data at rest. While Google-manag
     * The `codtech-internship-mybucket-2025` bucket was configured to use `my-gcs-encryption-key` as its default encryption key. Any new objects uploaded to this bucket will now be encrypted using this customer-managed key.
 
 **Screenshot 10: CMEK Configuration on Bucket (and Key in KMS)**
-![CMEK Configuration](YOUR_LINK_TO_SCREENSHOT10_PNG_HERE)
-_(_**Note:** Capture your bucket's "Configuration" tab showing "Customer-managed encryption key (CMEK)" selected and your key name. Optionally, include a second screenshot of your key in KMS itself._)_
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/S-11.png?raw=true
 
----
+https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/S-12.png?raw=true
 
 ## Conclusion for Task 4
 
