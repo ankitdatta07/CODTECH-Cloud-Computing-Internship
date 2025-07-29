@@ -205,3 +205,58 @@ https://github.com/ankitdatta07/CODTECH-Cloud-Computing-Internship/blob/main/Tas
 ## Conclusion for Task 3
 
 Task 3, "Multi-Cloud Architecture," has been successfully completed by designing and conceptually implementing a serverless pipeline between AWS and GCP. This setup demonstrates robust multi-cloud communication, where an event in AWS (file upload to S3) seamlessly triggers a service in GCP (Cloud Run), with the event details logged and verifiable in GCP Logs Explorer. This showcases practical interoperability and the power of leveraging services across different cloud providers.
+---
+
+## Task 4: Cloud Security Implementation
+
+This section details the implementation of key security measures within Google Cloud Platform (GCP), focusing on Identity and Access Management (IAM) policies, secure storage configurations, and data encryption. This fulfills Task 4 of the internship, providing a report detailing the setup.
+
+### 1. IAM Policy Implementation (Least Privilege Principle)
+
+To demonstrate robust access control, a dedicated Service Account was created and granted only the minimum necessary permissions to interact with a specific resource.
+
+* **Service Account Name:** `storage-uploader-sa`
+* **Purpose:** To be used by automated processes or applications requiring limited access to Cloud Storage.
+* **Implemented Policy:** The `storage-uploader-sa` service account was granted the **`Storage Object Creator`** role *only* on the `codtech-internship-mybucket-2025` bucket. This was achieved by setting an IAM Condition at the project level, limiting the scope of this role to the specific bucket (`resource.name` starting with `projects/_/buckets/codtech-internship-mybucket-2025`). This exemplifies the principle of least privilege, ensuring the service account can upload new objects to this specific bucket but cannot read, delete, or modify existing objects, nor can it manage the bucket itself.
+
+**Screenshot 8: IAM Policy on Bucket (Service Account with Storage Object Creator Role via IAM Condition)**
+![IAM Policy on Bucket](YOUR_LINK_TO_SCREENSHOT8_PNG_HERE)
+_(_**Note:** Capture a screenshot of the IAM & Admin > IAM page showing your `storage-uploader-sa` principal and its "Storage Object Creator" role with the condition applied._)_
+
+### 2. Secure Storage Configuration
+
+Beyond IAM, the Cloud Storage bucket was configured with additional security settings to enhance data protection.
+
+* **Public Access Prevention Status:** The `codtech-internship-mybucket-2025` bucket's Public Access Prevention was noted. For a truly secure storage environment, this feature should ideally be **enforced** to prevent accidental public exposure of objects. (My current bucket's status is **[Not Enforced / Enforced - *Choose your actual status from the bucket details page*]** due to previous task requirements, but the principle of enforcing it for secure storage is understood).
+
+* **Retention Policy:** A retention policy was applied to the bucket.
+    * **Duration:** 1 day (example for demonstration, can be longer)
+    * **Purpose:** This policy ensures that objects cannot be permanently deleted or overwritten within the specified duration, providing a layer of protection against accidental deletion or malicious activity.
+    * **Location in GCP:** Found under the "Protection" section within the bucket details.
+
+**Screenshot 9: Secure Storage Configuration (Retention Policy)**
+![Secure Storage Configuration](YOUR_LINK_TO_SCREENSHOT9_PNG_HERE)
+_(_**Note:** Capture your bucket's "Configuration" tab (or "Protection" section) showing the enabled Retention Policy and its duration._)_
+
+### 3. Data Encryption Implementation
+
+GCP provides strong encryption capabilities for data at rest. While Google-managed encryption is default, Customer-Managed Encryption Keys (CMEK) offer an additional layer of control.
+
+* **Default Google-managed Encryption:** All data stored in Cloud Storage is automatically encrypted at rest using Google-managed encryption keys. This provides baseline security without any user intervention.
+
+* **Customer-Managed Encryption Keys (CMEK) Implementation:**
+    * A Key Ring (`my-storage-keys`) and a CryptoKey (`my-gcs-encryption-key`) were created within **Google Cloud Key Management Service (KMS)** in the same region as the storage bucket.
+    * The Google-managed Cloud Storage Service Account for the project (`service-<YOUR_PROJECT_NUMBER>@gs-project-accounts.iam.gserviceaccount.com`) was granted the **`Cloud KMS CryptoKey Encrypter/Decrypter`** role on the created key. This permission allows Cloud Storage to use this specific key for encryption operations.
+    * The `codtech-internship-mybucket-2025` bucket was configured to use `my-gcs-encryption-key` as its default encryption key. Any new objects uploaded to this bucket will now be encrypted using this customer-managed key.
+
+**Screenshot 10: CMEK Configuration on Bucket (and Key in KMS)**
+![CMEK Configuration](YOUR_LINK_TO_SCREENSHOT10_PNG_HERE)
+_(_**Note:** Capture your bucket's "Configuration" tab showing "Customer-managed encryption key (CMEK)" selected and your key name. Optionally, include a second screenshot of your key in KMS itself._)_
+
+---
+
+## Conclusion for Task 4
+
+Task 4, "Cloud Security Implementation," has been successfully completed on Google Cloud Platform. I have demonstrated the implementation of least privilege principle through granular IAM policies, enhanced storage security with retention policies, and configured data encryption using both default Google-managed keys and customer-managed encryption keys (CMEK). This showcases a foundational understanding of critical cloud security practices.
+
+---
